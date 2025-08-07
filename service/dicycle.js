@@ -10,7 +10,6 @@ class Customer extends Entity {
    */
   async publish() {
     let args = this.input.get('args');
-    args = JSON.parse(args)
     let echoId = this.input.get('echoId');
     let recipients = await this.yp.await_proc("entity_sockets", {
       hub_id: this.hub.get(Attr.id)
