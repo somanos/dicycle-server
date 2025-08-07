@@ -1,0 +1,14 @@
+{
+  "services": {
+    "publish": {
+      "scope": "hub",
+      "permission": {
+        "src": "anonymous"
+      }
+    }
+ },
+  "modules": {
+    "public": "service/dicycle",
+    "private": "service/dicycle"
+  }
+}
